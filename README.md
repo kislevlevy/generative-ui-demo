@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Generative UI Chat Demo
 
-## Getting Started
+A Next.js demo application with a chat interface powered by Anthropic AI, featuring generative UI for weather and stock information.
 
-First, run the development server:
+## Features
+
+- Chat interface with Anthropic AI
+- Weather information with 5-day forecast (generative UI)
+- Stock price information for any symbol (generative UI)
+- Beautiful shadcn/ui components
+
+## Setup
+
+1. Clone and install dependencies:
+
+```bash
+npm install
+```
+
+2. Create a `.env.local` file in the root directory with the following environment variables:
+
+```bash
+# Anthropic AI API Key
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+
+# Weather API Key (OpenWeatherMap - free tier available)
+WEATHER_API_KEY=your_openweathermap_api_key_here
+
+# Stock API Key (Alpha Vantage - free tier available)
+STOCK_API_KEY=your_alpha_vantage_api_key_here
+```
+
+3. Get your API keys:
+
+   - **Anthropic**: Sign up at https://console.anthropic.com/
+   - **OpenWeatherMap**: Sign up at https://openweathermap.org/api
+   - **Alpha Vantage**: Sign up at https://www.alphavantage.co/support/#api-key
+
+4. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Simply chat with the AI! The application will automatically display:
 
-## Learn More
+- Weather information when you ask about weather in any location
+- Stock prices when you ask about any stock symbol (e.g., "What's the price of AAPL?")
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The AI will use tools to fetch real-time data and display it using beautiful generative UI components.
