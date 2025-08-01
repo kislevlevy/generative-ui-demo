@@ -1,48 +1,85 @@
-# Generative UI Chat Demo
+# Generative UI Demo
 
 A Next.js demo application with a chat interface powered by Anthropic AI, featuring generative UI for weather and stock information.
 
-## Features
+## 🎨 Features
 
-- Chat interface with Anthropic AI
-- Weather information with 5-day forecast (generative UI)
-- Stock price information for any symbol (generative UI)
-- Beautiful shadcn/ui components
+✅ Beautiful chat interface with shadcn/ui  
+✅ AI-powered conversations with Claude  
+✅ Automatic weather display with 5-day forecast  
+✅ Stock price display with trading data  
+✅ Generative UI components  
+✅ Real-time data from trusted APIs
 
-## Setup
+## 🚀 Quick Setup
 
-1. Clone and install dependencies:
+### 1. Install Dependencies
 
 ```bash
 npm install
 ```
 
-2. Create a `.env.local` file in the root directory with the following environment variables:
+### 2. Create Environment File
+
+Create a `.env.local` file in the project root:
 
 ```bash
-# Anthropic AI API Key
+# Anthropic AI API Key (Required)
 ANTHROPIC_API_KEY=your_anthropic_api_key_here
 
-# Weather API Key (OpenWeatherMap - free tier available)
+# Weather API Key (Required for weather features)
 WEATHER_API_KEY=your_openweathermap_api_key_here
 
-# Stock API Key (Alpha Vantage - free tier available)
+# Stock API Key (Required for stock features)
 STOCK_API_KEY=your_alpha_vantage_api_key_here
 ```
 
-3. Get your API keys:
+### 3. Get Your API Keys
 
-   - **Anthropic**: Sign up at https://console.anthropic.com/
-   - **OpenWeatherMap**: Sign up at https://openweathermap.org/api
-   - **Alpha Vantage**: Sign up at https://www.alphavantage.co/support/#api-key
+#### Anthropic API Key (Required)
 
-4. Run the development server:
+- Go to https://console.anthropic.com/
+- Sign up/login and create an API key
+- Add it to your `.env.local` file
+
+#### OpenWeatherMap API Key (For Weather)
+
+- Go to https://openweathermap.org/api
+- Sign up for free account
+- Get your API key from the dashboard
+- Free tier includes 1000 calls/day
+
+#### Alpha Vantage API Key (For Stocks)
+
+- Go to https://www.alphavantage.co/support/#api-key
+- Sign up for free account
+- Get your API key
+- Free tier includes 25 calls/day
+
+### 4. Start the App
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the app.
+Open [http://localhost:3000](http://localhost:3000) and start chatting!
+
+## 💬 Try These Examples
+
+- "What's the weather in New York?"
+- "Show me AAPL stock price"
+- "How's the weather in Tokyo for the next 5 days?"
+- "What's Tesla stock doing today?"
+- "Tell me about the weather in London"
+- "Get me Microsoft stock information"
+
+## 🔧 Tech Stack
+
+- **Frontend**: Next.js 14, React, TypeScript
+- **UI**: shadcn/ui, Tailwind CSS
+- **AI**: Anthropic Claude with tool calling
+- **APIs**: OpenWeatherMap, Alpha Vantage
+- **Icons**: Lucide React
 
 ## Usage
 
